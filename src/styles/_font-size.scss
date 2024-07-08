@@ -1,0 +1,14 @@
+@use './breakpoints' as *;
+
+@mixin page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@mixin navlinks {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  &:hover {
+    font-weight: 500;
+  }
+}

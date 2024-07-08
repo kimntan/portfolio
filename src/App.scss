@@ -1,0 +1,17 @@
+@use './styles/variables' as *;
+@use './styles/font-size' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  @include page-title;
+  color: $red;
+}
