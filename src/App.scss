@@ -21,6 +21,10 @@ h2 {
   color: $taupe-grey;
 }
 
+h3 {
+  @include subheading;
+}
+
 p {
   @include body-large;
   color: $taupe-grey;
