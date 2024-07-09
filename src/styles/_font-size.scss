@@ -12,3 +12,13 @@
     font-weight: 500;
   }
 }
+
+@mixin section-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+@mixin body-large {
+  font-size: 0.875rem;
+  font-weight: 300;
+}

@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/font-size' as *;
+
+.about {
+  padding: 1rem 2.5rem;
+  margin-top: 3rem;
+  &__slogan {
+    @include flex-column;
+    gap: 0.25rem;
+  }
+  &__name {
+    color: $red;
+  }
+  &__roles {
+    color: $salmon;
+    font-weight: 500;
+  }
+}
