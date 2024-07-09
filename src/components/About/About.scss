@@ -3,7 +3,7 @@
 @use '../../styles/font-size' as *;
 
 .about {
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.75rem;
   margin-top: 3rem;
   &__slogan {
     @include flex-column;
@@ -15,5 +15,6 @@
   &__roles {
     color: $salmon;
     font-weight: 500;
+    padding-left: 0.1rem;
   }
 }
