@@ -30,4 +30,9 @@
     color: $white;
     text-align: right;
   }
+  &__container {
+    @include flex-column;
+    gap: 0.5rem;
+    background-color: $salmon;
+  }
 }
