@@ -1,5 +1,6 @@
 @use './styles/variables' as *;
 @use './styles/font-size' as *;
+@use './styles/mixins' as *;
 
 * {
   margin: 0;
@@ -9,6 +10,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -28,4 +33,9 @@ h3 {
 p {
   @include body-large;
   color: $taupe-grey;
+}
+
+.first-section {
+  height: 100vh;
+  @include flex-column;
 }

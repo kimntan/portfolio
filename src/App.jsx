@@ -7,9 +7,11 @@ import './App.scss'
 function App() {
   return (
     <>
-      <Header/>
-      <Hero />
-      <About />
+      <div className="first-section">
+        <Header/>
+        <Hero />
+        <About />
+      </div>
       <Projects />
     </>
   )

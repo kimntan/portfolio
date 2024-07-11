@@ -4,7 +4,10 @@
 
 .about {
   @include section-padding;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem;
+  flex: 1;
+  @include flex-column;
+  justify-content: center;
   &__slogan {
     @include flex-column;
     gap: 0.25rem;
