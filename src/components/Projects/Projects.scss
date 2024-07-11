@@ -3,6 +3,8 @@
 @use '../../styles/font-size' as *;
 
 .projects {
+  padding-bottom: 4rem;
+  background-color: $salmon;
   &__background {
     height: 3.5rem;
     width: 100%;

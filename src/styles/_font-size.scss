@@ -34,3 +34,9 @@
   line-height: 1.25rem;
   letter-spacing: 0.1px;
 }
+
+@mixin footer-copy {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+}

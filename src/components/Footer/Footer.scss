@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/font-size' as *;
+
+.footer {
+  background-color: $eggshell;
+  @include section-padding;
+  padding-bottom: 3rem;
+  @include slant(bottom left, 3deg, -1.75rem);
+  z-index: 3;
+  &__heading {
+    color: $salmon;
+  }
+  &__content {
+    @include flex (space-between, start);
+    padding-top: 0.5rem;
+  }
+  &__info {
+    @include flex-column;
+    padding-top: 0.25rem;
+  }
+  &__name {
+    color: $salmon;
+    @include footer-copy; 
+    padding-bottom: 0.25rem;
+  }
+  &__address {
+    color: $salmon;
+    @include footer-copy; 
+  }
+  &__socials {
+    @include flex(start, center);
+    gap: 0.6rem;
+  }
+  &__icon {
+    height: 1.5rem;
+    filter: invert(76%) sepia(43%) saturate(2436%) hue-rotate(309deg) brightness(96%) contrast(89%);
+  }
+}
