@@ -1,26 +1,37 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 @use '../../styles/font-size' as *;
+@use '../../styles/breakpoints' as *;
 
 .projects {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   background-color: $salmon;
+  @include slant(bottom left, -5deg, -1.25rem);
+  @include flex-column;
+  align-items: end;
+  @include project-padding;
+  &:after {
+    @include desktop {
+      transform: skewY(-3deg);
+    }
+  }
   &__background {
-    height: 3.5rem;
     width: 100%;
+    max-width: 30rem;
     background-color: $salmon;
-    @include section-padding;
-    padding-top: 0;
-    @include slant(bottom left, -5deg, -1.25rem);
   }
   &__heading {
     font-size: 1.65rem;
     color: $white;
     text-align: right;
+    padding-right: 2rem;
   }
   &__container {
     @include flex-column;
     background-color: $salmon;
+    @include tablet {
+      padding-bottom: 3rem;
+    }
   }
 }
 

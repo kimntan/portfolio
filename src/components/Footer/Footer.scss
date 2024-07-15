@@ -1,19 +1,35 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 @use '../../styles/font-size' as *;
+@use '../../styles/breakpoints' as *;
 
 .footer {
   background-color: $eggshell;
   @include section-padding;
-  padding-bottom: 3rem;
-  @include slant(bottom left, 3deg, -1.75rem);
-  z-index: 3;
+  padding-bottom: 3.5rem;
+  @include slant(bottom right, 2.5deg, 0rem);
+  z-index: 1;
   &__heading {
     color: $salmon;
+    position: relative;
+    @include tablet {
+      top: -2rem;
+    }
+    @include desktop {
+      top: -3rem;
+    }
   }
   &__content {
     @include flex (space-between, start);
-    padding-top: 0.5rem;
+    padding-top: 0.75rem;
+    position: relative;
+    @include tablet {
+      width: 20rem;
+      top: -2rem;
+    }
+    @include desktop {
+      top: -3rem;
+    }
   }
   &__info {
     @include flex-column;

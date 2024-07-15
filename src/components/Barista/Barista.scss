@@ -1,6 +1,7 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 @use '../../styles/font-size' as *;
+@use '../../styles/breakpoints' as *;
 
 .barista {
   background-color: $salmon;
@@ -13,6 +14,7 @@
     @include border-padding;
     @include flex-column;
     width: 100%;
+    max-width: 30rem
   }
   &__site-link {
     @include flex(start, center);
@@ -71,6 +73,7 @@
     padding: 0 0.25rem;
     background-color: $red;
     @include flex(center, center);
+    cursor: pointer;
   }
   &__text {
     color: $white;

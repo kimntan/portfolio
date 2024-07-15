@@ -1,11 +1,19 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 @use '../../styles/font-size' as *;
+@use '../../styles/breakpoints' as *;
 
 .header {
   padding: 1rem;
+  padding-bottom: 3rem;
   background-color: $eggshell;
   @include flex(space-between, center);
+  @include slant(top left, 6deg, 0rem);
+  &:after {
+    @include desktop {
+      transform: skewY(3deg);
+    }
+  }
   &__nav {
     display: flex;
     align-items: center;

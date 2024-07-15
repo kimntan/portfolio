@@ -1,3 +1,5 @@
+@use './breakpoints' as *;
+
 @mixin flex($justify, $align) {
   display: flex;
   justify-content: $justify;
@@ -11,6 +13,22 @@
 
 @mixin section-padding {
   padding: 1rem 2.75rem;
+  @include tablet {
+    padding: 3rem 3.5rem;
+  }
+  @include desktop {
+    padding: 3rem 12rem;
+  }
+}
+
+@mixin project-padding {
+  padding: 0 2.75rem 3rem;
+  @include tablet {
+    padding: 0 3.5rem 3rem;
+  }
+  @include desktop {
+    padding: 0 12rem 3rem;
+  }
 }
 
 @mixin section-border-padding {
