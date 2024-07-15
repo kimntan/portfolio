@@ -14,7 +14,7 @@
     @include border-padding;
     @include flex-column;
     width: 100%;
-    max-width: 30rem
+    max-width: 30rem;
   }
   &__site-link {
     @include flex(start, center);
@@ -92,6 +92,7 @@
   }
   &__icons {
     @include flex(center, center);
+    flex-wrap: wrap;
     gap: 0.75rem;
     padding: 0.5rem 0;
   }

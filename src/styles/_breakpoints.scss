@@ -2,6 +2,8 @@ $hero-breakpoint: 425px;
 $second-hero-breakpoint: 450px;
 $third-hero-breakpoint: 450px;
 
+
+$mobile-breakpoint: 415px;
 $tablet-breakpoint: 767px;
 $desktop-breakpoint: 1280px;
 
@@ -21,6 +23,12 @@ $desktop-breakpoint: 1280px;
   @media screen and (min-width: $third-hero-breakpoint) {
     @content;
   }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-breakpoint) {
+    @content;
+}
 }
 
 @mixin tablet {

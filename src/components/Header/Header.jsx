@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Menu from '../../assets/icons/MenuIcon.svg';
+// import Menu from '../../assets/icons/MenuIcon.svg';
 import './Header.scss';
 
 export default function Header () {

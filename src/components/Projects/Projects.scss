@@ -9,7 +9,7 @@
   @include slant(bottom left, -5deg, -1.25rem);
   @include flex-column;
   align-items: end;
-  @include project-padding;
+  // @include project-padding;
   &:after {
     @include desktop {
       transform: skewY(-3deg);
