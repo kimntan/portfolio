@@ -5,8 +5,7 @@
 
 .footer {
   background-color: $eggshell;
-  @include section-padding;
-  padding-bottom: 3.5rem;
+  @include footer-padding;
   @include slant(bottom right, 2.5deg, 0rem);
   z-index: 1;
   &__heading {
@@ -16,7 +15,7 @@
       top: -2rem;
     }
     @include desktop {
-      top: -3rem;
+      top: -3.5rem;
     }
   }
   &__content {
@@ -28,7 +27,7 @@
       top: -2rem;
     }
     @include desktop {
-      top: -3rem;
+      top: -3.5rem;
     }
   }
   &__info {

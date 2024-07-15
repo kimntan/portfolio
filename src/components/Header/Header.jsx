@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Menu from '../../assets/icons/MenuIcon.svg';
 import './Header.scss';
 
@@ -8,9 +9,9 @@ export default function Header () {
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item"><a className="header__nav-link" href="#projects">Projects</a></li>
-          <li className="header__nav-item"><a>Contact</a></li>
+          <li className="header__nav-item"><a className="header__nav-link" href='#contact'>Contact</a></li>
         </ul>
-        <img className="header__menu" src={Menu} alt="Menu Icon"/>
+        {/* <img className="header__menu-icon" src={Menu} alt="Menu Icon"/> */}
       </nav>
     </header>
   )

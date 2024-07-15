@@ -21,6 +21,16 @@
   }
 }
 
+@mixin footer-padding {
+  padding: 1rem 2.75rem 2rem;
+  @include tablet {
+    padding: 3rem 3.5rem 1rem;
+  }
+  @include desktop {
+    padding: 3rem 12rem 0;
+  }
+}
+
 @mixin project-padding {
   padding: 0 2.75rem 3rem;
   @include tablet {

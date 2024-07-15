@@ -5,7 +5,6 @@
 
 .header {
   padding: 1rem;
-  padding-bottom: 3rem;
   background-color: $eggshell;
   @include flex(space-between, center);
   @include slant(top left, 6deg, 0rem);
@@ -14,15 +13,27 @@
       transform: skewY(3deg);
     }
   }
+  @include tablet {
+    padding: 1.5rem 2.5rem 2rem;
+  }
+  @include desktop {
+    padding: 1.5rem 2.5rem 3rem;
+  }
   &__nav {
     display: flex;
     align-items: center;
     gap: 1rem;
+    @include tablet {
+      gap: 1.75rem;
+    }
   }
   &__nav-list {
     display: flex;
     padding: 0;
     gap: 1rem;
+    @include tablet {
+      gap: 1.75rem;
+    }
   }
   &__nav-item {
     list-style-type: none;
@@ -36,7 +47,7 @@
       color: $red;
     }
   }
-  &__menu {
+  &__menu-icon {
     height: 1.5rem;
     filter: invert(77%) sepia(18%) saturate(2659%) hue-rotate(307deg) brightness(91%) contrast(100%);
     &:hover {

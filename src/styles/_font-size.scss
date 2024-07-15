@@ -3,6 +3,9 @@
 @mixin page-title {
   font-size: 1.5rem;
   font-weight: 700;
+  @include tablet {
+    font-size: 1.75rem;
+  }
 }
 
 @mixin navlinks {
@@ -11,21 +14,33 @@
   &:hover {
     font-weight: 500;
   }
+  @include tablet {
+    font-size: 0.875rem;
+  }
 }
 
 @mixin section-heading {
   font-size: 1.25rem;
   font-weight: 600;
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 @mixin subheading {
   font-size: 1.25rem;
   font-weight: 500;
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 @mixin body-large {
   font-size: 0.875rem;
   font-weight: 300;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 @mixin body-medium {
@@ -33,10 +48,18 @@
   font-weight: 300;
   line-height: 1.25rem;
   letter-spacing: 0.1px;
+  @include tablet {
+    font-size: 0.8125rem;
+    letter-spacing: 0.2px;
+    line-height: 1.35rem;
+  }
 }
 
 @mixin footer-copy {
   font-size: 0.8125rem;
   font-weight: 300;
   line-height: 1.25rem;
+  @include tablet {
+    font-size: 0.875rem;
+  }
 }
