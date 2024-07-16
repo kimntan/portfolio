@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import useScreenSize from '../../utils/width';
 import LinkIcon from '../../assets/icons/ExternalIcon.svg';
 import ReactIcon from '../../assets/icons/react-original-wordmark.svg';
 import NodeIcon from '../../assets/icons/nodejs.svg';
@@ -14,6 +15,7 @@ export default function Barista () {
   const techStack = [ReactIcon, NodeIcon, MysqlIcon, SassIcon, KnexIcon, PassportIcon];
   const techName = ["React Icon", "Node Icon", "MySQL Icon", "Sass Icon", "Knex Icon", "Passport Icon"];
   const [expand, setExpand] = useState(false);
+  const screenWidth = useScreenSize();
 
   function handleExpand() {
     expand ? setExpand(false) : setExpand(true)
@@ -36,11 +38,28 @@ export default function Barista () {
         ? <>
             <div className="tech-stack__connector"></div>
             <div className="tech-stack">
-              <div className="tech-stack__icons">
-                {techStack.map((tech, index) => {
-                  return <img className="tech-stack__icon" src={tech} alt={techName[index]} key={index}/>
-                })}
-              </div>
+              
+              {techStack.length > 4 && screenWidth < 504
+                ? <div className="tech-stack__rows">
+                  <div className="tech-stack__icons">
+                    {techStack.slice(0, 3).map((tech, index) => {
+                      return <img className="tech-stack__icon" src={tech} alt={techName[index]} key={index}/>
+                    })}
+                  </div>
+                  <div className="tech-stack__icons">
+                    {techStack.slice(3).map((tech, index) => {
+                      return <img className="tech-stack__icon" src={tech} alt={techName[index]} key={index}/>
+                    })}
+                  </div>
+                </div> 
+
+                : <div className="tech-stack__icons">
+                  {techStack.map((tech, index) => {
+                    return <img className="tech-stack__icon" src={tech} alt={techName[index]} key={index}/>
+                  })}
+                </div>
+              }
+
             </div>
             <div className="tech-stack__open" onClick={handleExpand}>
               <p className="tech-stack__text">More</p>
