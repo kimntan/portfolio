@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import useScreenSize from '../../utils/width';
 import LinkIcon from '../../assets/icons/ExternalIcon.svg';
 import ReactIcon from '../../assets/icons/react-original-wordmark.svg';
