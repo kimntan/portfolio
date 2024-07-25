@@ -1,42 +1,42 @@
 @use './breakpoints' as *;
 
 @mixin page-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   @include tablet {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
 @mixin navlinks {
-  font-size: 0.8125rem;
+  font-size: 0.85rem;
   font-weight: 300;
   &:hover {
     font-weight: 500;
   }
   @include tablet {
-    font-size: 0.875rem;
+    font-size: 0.93rem;
   }
 }
 
 @mixin section-heading {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 600;
   @include tablet {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
 @mixin subheading {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
   @include tablet {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
 @mixin body-large {
-  font-size: 0.875rem;
+  font-size: 0.93rem;
   font-weight: 300;
   @include tablet {
     font-size: 1rem;
@@ -44,12 +44,12 @@
 }
 
 @mixin body-medium {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 300;
   line-height: 1.25rem;
   letter-spacing: 0.1px;
   @include tablet {
-    font-size: 0.8125rem;
+    font-size: 0.85rem;
     letter-spacing: 0.2px;
     line-height: 1.35rem;
   }
